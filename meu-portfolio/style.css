@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #343333;
+    scroll-behavior: smooth;
+    overflow: hidden; /*retira o scroll*/
+}
+
+/* .container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   } */
+
+/*Estilo do cabeçalho*/
+
+
+    header{
+        position: fixed; /*sticky*/
+        top: 0;
+        width: 100%;
+    }
+    .cabecalho{
+        display: grid;
+        grid-auto-flow: column;
+        height: 100px;
+        background-color: #3C403A;
+        color: #72FF03;
+        box-shadow: 0px 0px 20px #051f30;
+    }
+
+
+    #container-user{
+        display: grid;
+        grid-auto-flow: column;
+        width: 100px;
+    }
+
+    #container-user h1{
+        /* color:#eeff03; */
+    }
+    #thunder{
+        padding-right: 0;
+        margin-right: 0;
+    }
+    #container-user h1{
+        padding-top: 40%;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+
+    /* #menu{
+        display: grid;
+        grid-auto-flow: column;
+        text-align: center;
+        width: 500px;
+        margin-left: 700px;
+    } */
+    
+    #menu h1{
+        font-size: 22px;
+        margin-top: 0;
+        font-weight: normal;
+        padding-top: 40px;
+    }
+
+    #menu h1:hover{
+        color: aqua;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+
+    #menu ul{
+        display: flex;
+        margin:0;
+        padding: 0;
+        text-align: center;
+        justify-content: end;
+        
+    }
+
+    #menu li{
+        display: inline-block;
+        text-decoration: none;
+        padding-right: 50px;
+    }
+    
+    .dropdown-menu{
+        position: absolute;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom: 1px solid #03101f;
+        background-color: #3C403A;
+        width: 100px;
+        align-items: center;
+        text-align:center;
+        margin-right: 35px;
+        display: none;
+        /* box-shadow: 0px 15px 20px #051f30; */
+        
+    }
+    .dropdown-menu p:hover{
+        color:coral;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+
+
+
+/* Estilo Corpo do Site */
+
+    #main-container{
+        background-color: #343333;
+        display: grid;
+        grid-auto-flow: column;
+        height: 500px;
+        padding-top: 80px;
+        /* height: 100%; */
+    }
+
+    #port-container{
+        display: grid;
+        grid-auto-flow: row;
+    }
+
+    #port-text{
+        margin-top: 130px;
+        margin-left: 130px;
+    }
+
+    #cards{
+        display: grid;
+        grid-auto-flow: column;
+        margin-top: 80px;
+        padding-left: 130px;
+        width: 500px;
+    }
+
+    #linkedin:hover, 
+    #github:hover{
+        cursor: pointer;
+        transform: translateY(-7px);
+        transition-duration: 0.5s;
+    }
+
+    #divisoria{
+        height: 200px;
+        margin-top: 60px;
+    }
+
+    #robot-container{
+        display: grid;
+        grid-auto-flow: row;
+        margin-top: 80px;
+        height: 250px;
+        color: white;
+        text-align: center;
+    }
+
+    #robot-container h1{
+        padding-right: 70px;
+    }
+
+    #kyojuru-bot{
+        margin-left: 80px;
+                
+				/* Aqui declaramos nossa animação inline */
+				animation: jump 3s linear infinite;
+    }
+
+    @keyframes jump {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-30px);
+        }
+
+        100% {
+            transform: translateY(-0px);
+        }
+
+    }
+
+        
+
+
+    /*Sobre*/
+
+    #sobre{
+        display: grid;
+        grid-auto-flow: column;
+        height: 500px;
+        padding-top: 80px;
+    }
+    #about-text{
+        margin-top: 150px;
+        padding-left: 80px;
+        padding-right: 0;
+        justify-content: center;
+        width: 650px;
+    }
+
+    #divisoria2{
+        height: 200px;
+        margin-top: 60px;
+        padding-left: 0;
+    }
+
+    #vigilant-bot{
+        margin-left: 80px;
+    }
+
+
+
+    /*Projetos*/
+    #projetos{
+        /* display: grid;
+        grid-auto-flow: column;
+        align-items: center; */
+        height: 500px;
+        margin-top: 100px;
+    }
+
+    .swiper{
+        height: 500px;
+        width: 600px;
+
+    }
+
+    .swiper-wrapper{
+        padding-top: 50px;
+        
+        
+    }
+    .swiper-slide{
+        width: 400px;
+    }
+
+
+    .swiper-slide{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .swiper-slide a img{
+        padding-top: 25px;
+        width: 450px;
+    }
+
+    .proj-cards{
+        cursor: pointer;
+    }
+
+
+    @media (max-width: 450px){
+        .swiper{
+            height: 270px;
+        }
+    }
+

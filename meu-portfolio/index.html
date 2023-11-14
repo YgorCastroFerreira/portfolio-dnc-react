@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Repositório Ygor</title>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div id="container-user">
+            <img src="./Imagens/giphy.gif" width="100px" id="thunder" alt="">
+            <h1>ygorcf</h1>
+        </div>
+        <div id="menu">
+
+            <!-- <h1 class="menu-itens" onclick="inicio()">Início</h1>
+
+            <h1 class="menu-itens" onclick="sobre()">Sobre</h1>
+
+            <h1 class="menu-itens" onclick="projetos()">Projetos</h1>
+
+            <h1 class="menu-itens dropdown" onclick="">Idioma</h1> -->
+
+            <ul>
+                <li>
+                    <h1 class="menu-itens" id="home" onclick="inicio()">Início</h1>
+                </li>
+                <li>
+                    <h1 class="menu-itens" id="about" onclick="sobre()">Sobre</h1>
+                </li>
+                <li>
+                    <h1 class="menu-itens" id="projects" onclick="projetos()">Projetos</h1>
+                </li>
+                <li class="dropdown">
+                    <h1 class="menu-itens dropdown" id="idioma" onclick="">Idioma</h1>
+                    <div class="dropdown-menu">
+                        <p id="pt" onclick="portugues()">Português</p>
+                        <p id="en" onclick="ingles()">Inglês</p>
+                        <p id="es" onclick="espanhol()">Espanhol</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+    
+        <section id="main-container"> 
+            <div id="port-container">
+                <img src="./Imagens/portfolio.svg" id="port-text" width="500px" alt="">
+                <div id="cards">
+                    <a href="https://www.linkedin.com/in/ygorcferreira/">
+                        <img 
+                            src="./Imagens/linkedin.svg" 
+                            width="200px" 
+                            id="linkedin" 
+                            alt=""
+                        >
+                    </a>
+                    <a href="https://github.com/YgorCastroFerreira">
+                        <img 
+                            src="./Imagens/github.svg" 
+                            width="200px" 
+                            id="github" 
+                            alt=""
+                        >
+                    </a>
+                </div>
+            </div>
+            
+            <div id="divisoria">
+                <img src="./Imagens/divisao.svg" id="divisao" height="450px" width="50px" alt="">
+            </div>
+            
+    
+            <div id="robot-container">
+                <img src="./Imagens/home-robot.gif" id="kyojuru-bot" width="250px" alt="">
+                <img src="./Imagens/base.svg" alt="">
+                <h1 id="welcome">Seja bem vindo!</h1>
+            </div>
+        </section>
+    
+        <section id="sobre">
+            <div id="about-container">
+                <img src="./Imagens/sobre.svg" id="about-text" alt="">
+            </div>
+            
+            <div id="divisoria2">
+                <img src="./Imagens/divisao.svg" id="divisao" height="450px" width="50px" alt="">
+            </div>
+            
+            <div id="robot-container">
+                <img src="./Imagens/jun-kuga-roboro.gif" id="vigilant-bot" width="250px" alt="">
+                <img src="./Imagens/base.svg" alt="">
+            </div>
+        </section>
+    
+        <section  id="projetos">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://landing-page-ccxp-cyan.vercel.app/">
+                            <img src="./Projetos/ccxp.svg"  class="proj-cards" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <a href="https://bye-car-landing.netlify.app/">
+                            <img src="./Projetos/byecar.svg" class="proj-cards" alt="">
+                        </a>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <a href="https://teste-dnc-ygor.netlify.app/">
+                            <img src="./Projetos/dnc.svg"  class="proj-cards" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://desafio1-dnc-ygor.netlify.app/">
+                            <img src="./Projetos/arquit.svg"  class="proj-cards" id="arq" alt="">
+                        </a>
+                    </div>
+                    
+
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="menu.js"></script>
+    <script src="nav.js"></script>
+    <script src="lang-menu.js"></script>
+    
+
+</body>
+</html>
